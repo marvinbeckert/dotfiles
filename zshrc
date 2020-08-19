@@ -1,8 +1,10 @@
+# Start tmux on default
+if [ "$TMUX" = "" ]; then tmux; fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/Marvin/.oh-my-zsh"
+export ZSH="/Users/Marvin/.dotfiles/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -10,8 +12,8 @@ export ZSH="/Users/Marvin/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-#start tmux on defaukt start up with the oh-my-zsh plugin
-ZSH_TMUX_AUTOSTART=true
+#start tmux on default start up with the oh-my-zsh plugin
+ZSH_TMUX_AUTOSTART="true"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -92,18 +94,9 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
- alias zshconfig="vim ~/.zshrc"
- alias ohmyzsh="vim ~/.oh-my-zsh"
-alias vica="cd ~/Documents/webdev/vicaOne"
-alias up="cd ../"
-alias rm="rm -i"
-alias dt="cd ~/Desktop"
-alias dl="cd ~/Downloads"
+
 # Insert something for syntax highlight to be working
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#import aliases
+source $HOME/.shell/aliases.sh
