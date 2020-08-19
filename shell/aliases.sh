@@ -10,10 +10,15 @@
  alias up="cd ../"
  alias rm="rm -i"
  alias dt="cd ~/Desktop"
+ alias docs="cd ~/documents"
  alias dl="cd ~/Downloads"
  alias c="code"
  alias v="vim"
  alias la="ls -a"
+ alias logs="log show --color always"
+ alias vicadev="firebase deploy --project vicaone-dev"
+ alias vicalive="firebase deploy --project vicaone-live"
+ alias python="/usr/local/bin/python"
 
 # Create a directory and cd into it
 mcd() {
