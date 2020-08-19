@@ -11,3 +11,6 @@
         path: ./shell/aliases.sh
         create: true
     ~/.tmux.conf:
+    ~/.oh-my-zsh:
+	path: ./.oh-my-zsh
+	crate: true
