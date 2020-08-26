@@ -7,10 +7,9 @@
         create: true
     ~/.vimrc:
     ~/.zshrc:
-    ~/.shell/aliases:
-        path: ./shell/aliases.sh
+    ~/.shell:
         create: true
     ~/.tmux.conf:
-    ~/.oh-my-zsh:
-	path: ./.oh-my-zsh
-	crate: true
+    ~/.oh-my-zsh/:
+        relink: true
+    
