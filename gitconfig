@@ -1,9 +1,18 @@
 [user]
-	name = ObstFliege
+	name = marvinbeckert
 	email = marvinbeckert@gmail.com
 [color]
 	ui = auto
+
+[color "branch"]
+	current = bold cyan
+	local = normal
+	remote = bold red
+	upstream = bold blue
 [alias]
 	co = checkout
 	br = branch
 	s = status
+[core]
+	editor = vim
+
