@@ -12,4 +12,4 @@
     ~/.tmux.conf:
     ~/.oh-my-zsh/:
         relink: true
-    
+    ~/.p10.zsh:
