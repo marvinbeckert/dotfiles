@@ -12,6 +12,7 @@
  alias dt="cd ~/Desktop"
  alias docs="cd ~/documents"
  alias dl="cd ~/Downloads"
+ alias dot="cd ~/.dotfiles" 
  alias c="code"
  alias v="vim"
  alias la="ls -a"
