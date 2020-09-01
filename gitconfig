@@ -13,6 +13,7 @@
 	co = checkout
 	br = branch
 	s = status
+	unstage = reset HEAD --
 [core]
 	editor = vim
 
