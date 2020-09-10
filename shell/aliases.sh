@@ -6,7 +6,7 @@
  alias mv='mv -i'
  alias zshconfig="vim ~/.zshrc"
  alias ohmyzsh="vim ~/.oh-my-zsh"
- alias vica="cd ~/Documents/webdev/vicaOne"
+ alias vica="cd ~/dev/vicaOne"
  alias up="cd ../"
  alias rm="rm -i"
  alias dt="cd ~/Desktop"
