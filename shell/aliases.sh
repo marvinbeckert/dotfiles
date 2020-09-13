@@ -7,6 +7,7 @@
  alias zshconfig="vim ~/.zshrc"
  alias ohmyzsh="vim ~/.oh-my-zsh"
  alias vica="cd ~/dev/vicaOne"
+ alias backend="cd ~/documents/webdev/backend_cors"
  alias up="cd ../"
  alias rm="rm -i"
  alias dt="cd ~/Desktop"
