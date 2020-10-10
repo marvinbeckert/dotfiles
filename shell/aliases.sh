@@ -18,13 +18,19 @@
  alias v="vim"
  alias la="ls -a"
  alias logs="log show --color always"
- alias vicadev="firebase deploy --project vicaone-dev"
- alias vicalive="firebase deploy --project vicaone-live"
+ alias hostdev="firebase deploy --project vicaone-dev"
+ alias hostlive="firebase deploy --project vicaone-live"
  alias python="/usr/local/bin/python"
+ 
 
 # Create a directory and cd into it
 mcd() {
     mkdir "${1}" && cd "${1}"
+}
+
+# touch a file and open it in vscode
+cto() {
+    touch "${1}" && code -r "${1}"
 }
 
 cda() {
