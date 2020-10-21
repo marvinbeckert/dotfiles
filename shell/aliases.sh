@@ -7,7 +7,7 @@
  alias zshconfig="vim ~/.zshrc"
  alias ohmyzsh="vim ~/.oh-my-zsh"
  alias vica="cd ~/dev/vicaOne"
- alias backend="cd ~/documents/webdev/backend_cors"
+ alias backend="cd ~/dev/Timescale_Backend"
  alias up="cd ../"
  alias rm="rm -i"
  alias dt="cd ~/Desktop"
@@ -21,6 +21,7 @@
  alias hostdev="firebase deploy --project vicaone-dev"
  alias hostlive="firebase deploy --project vicaone-live"
  alias python="/usr/local/bin/python"
+ alias notes="cd ~/documents/notes"
  
 
 # Create a directory and cd into it
