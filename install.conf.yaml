@@ -17,8 +17,8 @@
     ~/.p10k.zsh:
             relink: true
             force: true
-	~/.oh-my-zsh:
-		path: ./ohmyzsh
-		create: true
-		force: true
-		relink: true
+    ~/.oh-my-zsh:
+        path: ./ohmyzsh
+        create: true
+        force: true
+        relink: true
