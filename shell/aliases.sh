@@ -2,14 +2,12 @@
  alias grep='grep --color'
 
 # Aliases to protect against overwriting
- alias vim="nvim"
  alias cp='cp -i'
  alias mv='mv -i'
  alias zshconfig="vim ~/.zshrc"
  alias ohmyzsh="vim ~/.oh-my-zsh"
  alias vica="cd ~/dev/vicaOne"
  alias backend="cd ~/dev/Timescale_Backend"
- alias up="cd ../"
  alias dt="cd ~/Desktop"
  alias docs="cd ~/documents"
  alias dl="cd ~/Downloads"
