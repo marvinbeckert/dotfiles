@@ -18,7 +18,7 @@
             relink: true
             force: true
 	~/.oh-my-zsh:
-		path: ohmyzsh
+		path: ./ohmyzsh
 		create: true
 		force: true
 		relink: true
