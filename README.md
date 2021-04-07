@@ -6,3 +6,5 @@ run to clone:
 
 then to install 
 `cd ~/.dotfiles && ./install` 
+
+You must also install custom plugin and theme (syntax-highlighting and powerlevel10k)
