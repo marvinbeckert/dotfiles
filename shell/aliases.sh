@@ -15,9 +15,6 @@
  alias c="code"
  alias v="vim"
  alias la="ls -a"
- alias logs="log show --color always"
- alias hostdev="firebase deploy --project vicaone-dev"
- alias hostlive="firebase deploy --project vicaone-live"
  alias python="/usr/local/bin/python"
  alias notes="cd ~/documents/notes"
  

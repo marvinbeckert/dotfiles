@@ -1,6 +1,7 @@
 [user]
 	name = marvinbeckert
 	email = 60096742+whatwouldmarvindo@users.noreply.github.com
+
 [color]
 	ui = auto
 
@@ -9,16 +10,19 @@
 	local = normal
 	remote = bold red
 	upstream = bold blue
+
 [alias]
 	co = checkout
 	br = branch
 	s = status
 	unstage = reset HEAD --
 	last = log -1 HEAD
+
 [core]
 	editor = vim
 
 [pull]
 	rebase = false
+
 [credential]
 	helper = manager
