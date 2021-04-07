@@ -1,1 +1,0 @@
-/Users/Marvin/.dotfiles/zshrc
