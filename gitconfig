@@ -1,6 +1,6 @@
 [user]
 	name = marvinbeckert
-	email = marvinbeckert@gmail.com
+	email = 60096742+whatwouldmarvindo@users.noreply.github.com
 [color]
 	ui = auto
 
@@ -20,3 +20,5 @@
 
 [pull]
 	rebase = false
+[credential]
+	helper = manager

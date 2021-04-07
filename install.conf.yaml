@@ -11,3 +11,5 @@
         create: true
     ~/.tmux.conf:
     ~/.p10k.zsh:
+    ~/vim.init:
+        path: config/nvim
