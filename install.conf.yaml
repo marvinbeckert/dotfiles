@@ -22,3 +22,7 @@
         create: true
         force: true
         relink: true
+    ~/.vim:
+        create: true
+        force: true
+        relink: true
