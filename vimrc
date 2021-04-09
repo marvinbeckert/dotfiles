@@ -5,7 +5,8 @@ set hlsearch
 set ruler
 colorscheme peachpuff
 highlight Comment ctermfg=green
-" Comments in Vimscript start with a `"`.
+set background=dark
+" ents in Vimscript start with a `"`.
 
 " If you open this file in Vim, it'll be syntax highlighted for you.
 
@@ -101,3 +102,19 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_switch_buffer = 'et'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
+let mapleader = " " " map leader to Space
+nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" Start NERDTree, unless a file or session is specified, eg. vim -S session_file.vim.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') && v:this_session == '' | NERDTree | endif
+
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
+" git escape for deleting search highlights
+nnoremap <esc> :noh<return><esc>
