@@ -16,3 +16,9 @@
 [submodule "vim/pack/vendor/start/vim-easymotion"]
 	path = vim/pack/vendor/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "ohmyzsh/custom/themes/powerlevel10k"]
+  path = ohmyzsh/custom/themes/powerlevel10k
+  url = https://github.com/romkatv/powerlevel10k
+[submodule "ohmyzsh/custom/plugins/zsh-syntax-highlighting"]
+  path = ohmyzsh/custom/plugins/zsh-syntax-highlighting
+  url = https://github.com/zsh-users/zsh-syntax-highlighting
