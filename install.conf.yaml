@@ -26,3 +26,5 @@
         create: true
         force: true
         relink: true
+    ~/z.sh:
+    ~/.init.vim:

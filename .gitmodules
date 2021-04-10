@@ -22,3 +22,6 @@
 [submodule "ohmyzsh/custom/plugins/zsh-syntax-highlighting"]
   path = ohmyzsh/custom/plugins/zsh-syntax-highlighting
   url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "vim/pack/vendor/start/syntastic"]
+	path = vim/pack/vendor/start/syntastic
+	url = https://github.com/scrooloose/syntastic

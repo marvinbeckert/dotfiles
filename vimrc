@@ -1,4 +1,3 @@
-set expandtab
 set ai
 set number
 set hlsearch
