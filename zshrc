@@ -59,8 +59,6 @@ export ZSH="$HOME/.dotfiles/ohmyzsh"
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Install z-command for shell
-. ~/.dotfiles/z.sh 
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
