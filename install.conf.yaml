@@ -26,4 +26,4 @@
         create: true
         force: true
         relink: true
-    ~/.init.vim:
+    ~/.vim_runtime:
