@@ -27,3 +27,4 @@
         force: true
         relink: true
     ~/.vim_runtime:
+    ~/.committemplate.txt:

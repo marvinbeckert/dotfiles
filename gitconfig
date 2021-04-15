@@ -26,3 +26,5 @@
 
 [credential]
 	helper = manager
+[commit]
+	template = /Users/Marvin/.committemplate.txt
