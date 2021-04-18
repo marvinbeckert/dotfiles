@@ -9,15 +9,15 @@
  alias vica="cd ~/dev/vicaOne"
  alias backend="cd ~/dev/Timescale_Backend"
  alias dt="cd ~/Desktop"
- alias docs="cd ~/documents"
+ alias docs="cd ~/Library/Mobile \Documents/com~apple~CloudDocs/documents"
  alias dl="cd ~/Downloads"
- alias dot="cd ~/.dotfiles" 
+ alias dot="cd ~/.dotfiles"
  alias c="code"
  alias v="vim"
  alias la="ls -a"
  alias python="/usr/local/bin/python"
  alias notes="cd ~/documents/notes"
- 
+
 
 # Create a directory and cd into it
 mcd() {
