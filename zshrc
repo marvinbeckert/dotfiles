@@ -99,11 +99,11 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Insert something for syntax highlight to be working
-source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.dotfiles/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #import aliases
 source $HOME/.shell/aliases.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source $ZSH/custom/themes/powerlevel10k/powerlevel10k.zsh-theme 
+source ~/.dotfiles/plugins/powerlevel10k/powerlevel10k.zsh-theme 
