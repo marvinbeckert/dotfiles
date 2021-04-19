@@ -7,4 +7,7 @@ run to clone:
 then to install 
 `cd ~/.dotfiles && ./install` 
 
-You must also install custom plugin and theme (syntax-highlighting and powerlevel10k)
+If you don't have vim installed then change the default editor for git commits with:
+> Change "editor_name" to whatever editor you have like nano, vi or vscode
+
+`git config --global core.editor editor_name`
