@@ -17,6 +17,7 @@
  alias la="ls -a"
  alias python="/usr/local/bin/python"
  alias notes="cd ~/documents/notes"
+ alias tmux="tmux -u"
 
 
 # Create a directory and cd into it
