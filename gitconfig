@@ -3,13 +3,18 @@
 	email = 60096742+whatwouldmarvindo@users.noreply.github.com
 
 [color]
-	ui = auto
+	ui = true
 
 [color "branch"]
 	current = bold cyan
 	local = normal
 	remote = bold red
 	upstream = bold blue
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
 
 [alias]
 	co = checkout
@@ -25,6 +30,10 @@
 	rebase = false
 
 [credential]
-	helper = manager
+    helper = osxkeychain
+
+[url "https://github.com/"]
+    insteadOf = gh:
+
 [commit]
 	template = ~/.committemplate.txt
