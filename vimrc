@@ -15,6 +15,8 @@ Plug 'https://github.com/easymotion/vim-easymotion'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'plasticboy/vim-markdown'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'https://github.com/inkarkat/vim-ReplaceWithRegister'
 call plug#end()
 
 " some basics:
@@ -25,7 +27,6 @@ call plug#end()
 	set encoding=utf-8
 	set number relativenumber
 	set autoindent
-	set hls " search highlight
 	set lbr " line break
 	set backspace=indent,eol,start " allow backspacing over everything
 	set expandtab
@@ -38,8 +39,6 @@ call plug#end()
         set ttymouse=xterm2
     endif
     set nofoldenable " disable folding by default
-" save read-only files
-    command -nargs=0 Sudow w !sudo tee % >/dev/null
 " remove search highlights
     nnoremap <C-n> :noh<return>
 " tab completion for files/bufferss
@@ -111,3 +110,5 @@ call plug#end()
     \]
     let g:markdown_syntax_conceal = 0
     let g:markdown_folding = 1
+" vim-airline-theme
+    let g:airline_theme='simple'
