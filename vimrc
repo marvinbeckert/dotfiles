@@ -7,16 +7,16 @@ endif
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree'
-" Plug 'vimwiki/vimwiki'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
 Plug 'https://github.com/easymotion/vim-easymotion'
-Plug 'https://github.com/ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'https://github.com/inkarkat/vim-ReplaceWithRegister'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 
 " some basics:
@@ -75,6 +75,8 @@ call plug#end()
 	set noerrorbells visualbell t_vb=
 " show matching braces when text indicator is over them
 	set showmatch
+" open fiile to the side with gf
+    nnoremap <C-w>f :vertical wincmd f <CR>
 
 "---------------------
 " Plugin configuration
@@ -112,3 +114,5 @@ call plug#end()
     let g:markdown_folding = 1
 " vim-airline-theme
     let g:airline_theme='simple'
+" markdown
+    nmap <Leader>md :MarkdownPreviewToggle<CR>
