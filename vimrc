@@ -39,6 +39,7 @@ call plug#end()
         set ttymouse=xterm2
     endif
     set nofoldenable " disable folding by default
+    set history=100 " extended history of vim commands
 " remove search highlights
     nnoremap <C-n> :noh<return>
 " tab completion for files/bufferss
