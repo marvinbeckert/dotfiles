@@ -77,6 +77,8 @@ call plug#end()
 	set showmatch
 " open fiile to the side with gf
     nnoremap <C-w>f :vertical wincmd f <CR>
+" jump to last edited file with leader + l
+    nnoremap <Leader>l :b# <CR>
 
 "---------------------
 " Plugin configuration
