@@ -27,32 +27,37 @@ call plug#end()
 	set encoding=utf-8
 	set number relativenumber
 	set autoindent
-	set lbr " line break
-	set backspace=indent,eol,start " allow backspacing over everything
-	set expandtab
+	set linebreak
+	set backspace=indent,eol,start "allow backspacing over everything
 	set tabstop=4
-	set shiftwidth=4
-	set softtabstop=4
-    set mouse+=a " enable mouse mode (scrolling, selection, etc)
+	set expandtab
+    set shiftwidth=4
+    set softtabstop=4
+    set nofoldenable "disable folding by default
+    set history=100 "extended history of vim commands
+    nnoremap <C-n> :set noh<CR>
+    set mouse=a "enable mouse mode (scrolling, selection, etc)
+
+    " tmux knows the extended mouse mode
     if &term =~ '^screen'
-        " tmux knows the extended mouse mode
         set ttymouse=xterm2
     endif
-    set nofoldenable " disable folding by default
-    set history=100 " extended history of vim commands
-" remove search highlights
-    nnoremap <C-n> :noh<return>
-" tab completion for files/bufferss
-    set wildmode=longest,list
-    set wildmenu
-" Enable autocompletion:
-	set wildmode=longest,list,full
+
+" " tab completion for files/bufferss
+"     set wildmode=longest,list
+"     set wildmenu
+" " Enable autocompletion:
+" 	set wildmode=longest,list,full
+
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
 	set splitbelow splitright
-" Replace all is aliased to S.
+
+" 'Replace all' is aliased to S.
 	nnoremap S :%s//g<Left><Left>
+
 " Save file as sudo on files that require root permission
 	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
 	autocmd BufWritePre * %s/\s\+$//e
 	autocmd BufWritePre * %s/\n\+\%$//e
@@ -79,7 +84,26 @@ call plug#end()
 " open fiile to the side with gf
     nnoremap <C-w>f :vertical wincmd f <CR>
 " jump to last edited file with leader + l
-    nnoremap <Leader>l :b# <CR>
+    nnoremap <Leader>l :b#<CR>
+
+" different cursors in vim for iTerm
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" leave insert mode quickly
+if ! has('gui_running')
+    set ttimeoutlen=10
+    augroup FastEscape
+        autocmd!
+        au InsertEnter * set timeoutlen=0
+        au InsertLeave * set timeoutlen=1000
+    augroup END
+endif
+
+" make the 81st column stand out
+    highlight ColorColumn ctermbg=magenta
+    call matchadd('ColorColumn', '\%81v', 100)
 
 "---------------------
 " Plugin configuration
@@ -90,7 +114,7 @@ call plug#end()
     nnoremap <Leader>f :NERDTreeFind<CR>
 
 " easymotion mappings
-	nmap s <Plug>(easymotion-f2)
+    nmap s <Plug>(easymotion-f2)
 
 " incsearch
     map / <Plug>(incsearch-forward)
@@ -115,7 +139,7 @@ call plug#end()
     \]
     let g:markdown_syntax_conceal = 0
     let g:markdown_folding = 1
+    nmap <Leader>md :MarkdownPreviewToggle<CR>
+
 " vim-airline-theme
     let g:airline_theme='simple'
-" markdown
-    nmap <Leader>md :MarkdownPreviewToggle<CR>
